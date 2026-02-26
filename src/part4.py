@@ -127,6 +127,8 @@ def remove_key(dct, key):
     if key in dct:
         del dct[key]
 
+    return dct
+
     pass
 
 def iterate_list(lst, callback):
@@ -140,6 +142,9 @@ def iterate_list(lst, callback):
     Returns:
         list: List containing the results from applying callback to each element
     """
+
+    return [callback(item) for item in lst]
+
     pass
 
 def find_item(lst, predicate):
@@ -153,4 +158,10 @@ def find_item(lst, predicate):
     Returns:
         any: The first matching item if found, otherwise None
     """
+
+    for item in lst:
+        if predicate(item):
+            return item
+    return None
+
     pass
