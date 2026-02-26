@@ -11,6 +11,9 @@ def length(sequence):
     Returns:
         int: The number of elements or characters
     """
+
+    return len(sequence)
+
     pass
 
 def get_first(sequence):
@@ -23,6 +26,11 @@ def get_first(sequence):
     Returns:
         any or str: The first element (for lists) or first character (for strings)
     """
+    if len(sequence) == 0:
+        return None
+
+    return sequence[0]
+
     pass
 
 def get_last(sequence):
@@ -35,6 +43,11 @@ def get_last(sequence):
     Returns:
         any or str: The last element (for lists) or last character (for strings)
     """
+
+    if len(sequence) == 0:
+        return None
+    return sequence[-1]
+
     pass
 
 def get_at_index(sequence, index):
@@ -48,6 +61,9 @@ def get_at_index(sequence, index):
     Returns:
         any or str: The element at the given index (any type for lists, str for strings)
     """
+
+    return sequence[index]
+
     pass
 
 def get_slice(sequence, start, end):
@@ -62,6 +78,9 @@ def get_slice(sequence, start, end):
     Returns:
         list or str: Subsequence of the same type as input
     """
+
+    return sequence[start:end]
+
     pass
 
 def append_item(lst, item):
@@ -75,6 +94,11 @@ def append_item(lst, item):
     Returns:
         list: The modified list
     """
+
+    lst.append(item)
+
+    return lst
+
     pass
 
 def remove_item(lst, item):
