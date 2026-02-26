@@ -11,7 +11,7 @@ def create_dict(keys, values):
     Returns:
         dict: Dictionary mapping keys to values
     """
-    pass
+    return dict(zip(keys, values))
 
 def get_value(dct, key):
     """
@@ -24,7 +24,8 @@ def get_value(dct, key):
     Returns:
         any: The value associated with the key if found, otherwise None
     """
-    pass
+    return dct.get(key)
+
 
 def set_value(dct, key, value):
     """
@@ -38,7 +39,8 @@ def set_value(dct, key, value):
     Returns:
         dict: The modified dictionary
     """
-    pass
+    dct[key] = value
+    return dct
 
 def has_key(dct, key):
     """
@@ -51,7 +53,8 @@ def has_key(dct, key):
     Returns:
         bool: True if key exists, False otherwise
     """
-    pass
+    return key in dct
+
 
 def get_keys(dct):
     """
@@ -63,7 +66,7 @@ def get_keys(dct):
     Returns:
         list: List of all keys
     """
-    pass
+    return list(dct.keys())
 
 def get_values(dct):
     """
@@ -75,7 +78,7 @@ def get_values(dct):
     Returns:
         list: List of all values
     """
-    pass
+    return list(dct.values())
 
 def count_keys(dct):
     """
@@ -87,7 +90,7 @@ def count_keys(dct):
     Returns:
         int: Number of key-value pairs
     """
-    pass
+    return len(dct)
 
 def remove_key(dct, key):
     """
@@ -100,7 +103,9 @@ def remove_key(dct, key):
     Returns:
         dict: The modified dictionary
     """
-    pass
+    if key in dct:
+        del dct[key]
+    return dct
 
 def iterate_list(lst, callback):
     """
