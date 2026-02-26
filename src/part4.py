@@ -11,14 +11,9 @@ def create_dict(keys, values):
     Returns:
         dict: Dictionary mapping keys to values
     """
-<<<<<<< HEAD
-    return dict(zip(keys, values))
-=======
-
     return dict(zip(keys, values))
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def get_value(dct, key):
     """
@@ -31,15 +26,8 @@ def get_value(dct, key):
     Returns:
         any: The value associated with the key if found, otherwise None
     """
-<<<<<<< HEAD
     return dct.get(key)
 
-=======
-
-    return dct.get(key)
-
-    pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def set_value(dct, key, value):
     """
@@ -53,17 +41,10 @@ def set_value(dct, key, value):
     Returns:
         dict: The modified dictionary
     """
-<<<<<<< HEAD
     dct[key] = value
-    return dct
-=======
-
-    dct[key] = value
-
     return dct
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def has_key(dct, key):
     """
@@ -76,15 +57,9 @@ def has_key(dct, key):
     Returns:
         bool: True if key exists, False otherwise
     """
-<<<<<<< HEAD
-    return key in dct
-
-=======
-
     return key in dct
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def get_keys(dct):
     """
@@ -96,14 +71,9 @@ def get_keys(dct):
     Returns:
         list: List of all keys
     """
-<<<<<<< HEAD
-    return list(dct.keys())
-=======
-
     return list(dct.keys())
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def get_values(dct):
     """
@@ -115,14 +85,9 @@ def get_values(dct):
     Returns:
         list: List of all values
     """
-<<<<<<< HEAD
-    return list(dct.values())
-=======
-
     return list(dct.values())
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def count_keys(dct):
     """
@@ -134,14 +99,9 @@ def count_keys(dct):
     Returns:
         int: Number of key-value pairs
     """
-<<<<<<< HEAD
-    return len(dct)
-=======
-
     return len(dct)
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def remove_key(dct, key):
     """
@@ -154,19 +114,12 @@ def remove_key(dct, key):
     Returns:
         dict: The modified dictionary
     """
-<<<<<<< HEAD
-    if key in dct:
-        del dct[key]
-    return dct
-=======
-
     if key in dct:
         del dct[key]
 
     return dct
 
     pass
->>>>>>> dd7ebeb51370a0b67088a1d0862c31862d845a6b
 
 def iterate_list(lst, callback):
     """
