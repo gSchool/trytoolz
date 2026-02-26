@@ -12,6 +12,10 @@ def data_type(value):
     Returns:
         str: The data type of the value as a string
     """
+    results = type(value).__name__
+
+    return results
+
     pass
 
 def add(a, b):
@@ -25,6 +29,10 @@ def add(a, b):
     Returns:
         int: The sum of a and b
     """
+    results = a + b
+
+    return results
+
     pass
 
 def subtract(a, b):
@@ -38,6 +46,10 @@ def subtract(a, b):
     Returns:
         int: The difference of a and b
     """
+    results = a - b
+
+    return results
+
     pass
 
 def multiply(a, b):
@@ -51,6 +63,11 @@ def multiply(a, b):
     Returns:
         int: The product of a and b
     """
+
+    results = a * b
+
+    return results
+
     pass
 
 def divide(a, b):
@@ -64,6 +81,11 @@ def divide(a, b):
     Returns:
         float: The division of a and b
     """
+
+    results = a / b
+
+    return results
+
     pass
 
 def floor_divide(a, b):
@@ -77,6 +99,11 @@ def floor_divide(a, b):
     Returns:
         int: The result of floor division of a and b
     """
+
+    results = a // b
+
+    return results
+
     pass
 
 
@@ -91,6 +118,10 @@ def get_remainder(a, b):
     Returns:
         int: The remainder of a and b
     """
+    results = a % b
+
+    return results
+
     pass
 
 def increment(a):
@@ -103,6 +134,11 @@ def increment(a):
     Returns:
         int: The incremented value of a
     """
+
+    results = a + 1
+
+    return results
+
     pass
 
 def decrement(a):
@@ -115,6 +151,11 @@ def decrement(a):
     Returns:
         int: The decremented value of a
     """
+
+    results = a - 1
+
+    return results
+
     pass
 
 def exponent(a, b):
@@ -128,4 +169,9 @@ def exponent(a, b):
     Returns:
         int: The result of raising a to the power of b
     """
+
+    results = a ** b
+
+    return results
+
     pass
