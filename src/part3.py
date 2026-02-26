@@ -112,6 +112,12 @@ def remove_item(lst, item):
     Returns:
         list: The modified list
     """
+
+    if item in lst:
+        lst.remove(item)
+
+    return lst
+
     pass
 
 def count_item(lst, item):
@@ -125,6 +131,8 @@ def count_item(lst, item):
     Returns:
         int: Number of occurrences
     """
+    return lst.count(item)
+
     pass
 
 def reverse_sequence(sequence):
@@ -137,6 +145,8 @@ def reverse_sequence(sequence):
     Returns:
         list or str: The reversed sequence (same type as input)
     """
+    return sequence[::-1]
+
     pass
 
 def join_items(lst, separator):
@@ -150,4 +160,7 @@ def join_items(lst, separator):
     Returns:
         str: The joined string
     """
+
+    return separator.join(str(item) for item in lst)
+
     pass
