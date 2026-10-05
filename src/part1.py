@@ -12,7 +12,7 @@ def data_type(value):
     Returns:
         str: The data type of the value as a string
     """
-    pass
+    return type(value).__name__
 
 def add(a, b):
     """
@@ -25,7 +25,7 @@ def add(a, b):
     Returns:
         int: The sum of a and b
     """
-    pass
+    return a + b
 
 def subtract(a, b):
     """
